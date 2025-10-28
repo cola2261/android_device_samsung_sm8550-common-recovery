@@ -41,3 +41,9 @@ on fs
 
 on boot
     start health-hal-2-1
+
+# Fix flashlight on OrangeFox
+on property:ro.orangefox.boot=1
+    mkdir /tmp/flashlight
+    write /tmp/flashlight/max_brightness "1"
+    symlink /sys/class/camera/flash/rear_flash /tmp/flashlight/brightness
