@@ -12,4 +12,4 @@ OF_USE_LZ4_COMPRESSION := 1
 
 # Flashlight
 OF_FLASHLIGHT_ENABLE := 1
-OF_FL_PATH1 := /tmp/flashlight # See /init.recovery.qcom.rc for more information
+OF_FL_PATH1 := /sys/class/leds/leds-sec1
