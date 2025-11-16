@@ -158,9 +158,9 @@ TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := true
 TW_THEME := portrait_hdpi
 TW_DEVICE_VERSION := 1
 TW_FRAMERATE := 120
-# See below for brightness settings
-# TW_MAX_BRIGHTNESS := 200
-# TW_DEFAULT_BRIGHTNESS := 200
+# Brightness values
+TW_MAX_BRIGHTNESS := 612
+TW_DEFAULT_BRIGHTNESS := 215 # ~35%
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_CUSTOM_CPU_TEMP_PATH := /sys/class/thermal/thermal_zone50/temp
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
@@ -192,8 +192,3 @@ TW_INCLUDE_LPTOOLS := true
 
 # Statusbar icons flags
 TW_STATUS_ICONS_ALIGN := center
-
-# Brighness values
-TW_MAX_BRIGHTNESS := 612
-# 35 percentage of max
-TW_DEFAULT_BRIGHTNESS := 214
